@@ -7,7 +7,10 @@ The purpose of this project is to report state math and reading test scores for 
 - Effects to school district summary
   - After re-running the analysis, it appears that for the school district as a whole, average reading and math scores, as well as passing percentages, were not significantly impacted by removing the 9th grade scores from Thomas High School. At most, scores changed by .3%. 
 
-- Effects to each school's summary
+Screenshot 1
+Screenshot 2
+
+- Effects to school summary
   - Re-running the analysis only impacted Thomas High School's metrics particularly to the passiing percentages, defined by receving 70% or higher, as shown in the DataFrames below. Prior to replacing the scores with NaNs Thomas High School had performed relatively well.
  
  2 dataframes
@@ -20,9 +23,11 @@ ths top 2
 - Effects to math and reading scores by grade
   - As expected, in comparing each school by grade, replacing Thomas High School's 9th grade scores only affected that grade at Thomas High; all other scores remained the same.  
 
-- Effects to school spending per student
+- Effects to math and reading scores by school spending
   - Also as expected, each school spent the same amount of money per student regardless of test scores.
  
 - Effects to math and reading scores by school size
 
 - Effects to math and reading scores by school type
+
+  jdfa;ldjfls
