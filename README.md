@@ -1,26 +1,33 @@
 School District Analysis
 ## Overview of the Project
 ### Purpose
-The purpose of this project is to report state math and reading test scores for 9th-12th graders at 15 specific high schools in a school district. An initial analysis was conducted, then under suspicion of academic dishonesty, all scores for 9th grade students at one school, Thomas High School, were replaced with NaNs and the analysis was re-run. This report reviews the effects of replacing the scores with NaNs on the school district as a whole, as well as the schools individually, particularly Thomas High School, and scores by grade, by school spending, school size, and school type. 
+The purpose of this project is to report state testing scores in math and reading for 9th-12th graders at 15 specific high schools in a school district. An initial analysis was conducted, then under suspicion of academic dishonesty, all scores for 9th grade students at one school - Thomas High School - were replaced with NaNs and the analysis was re-run. This report reviews the effects of replacing the scores with NaNs on the school district as a whole, as well as the schools individually, particularly Thomas High School, and scores by grade, by school spending, school size, and school type. 
 
 ### Results
 - Effects to school district summary
   - After re-running the analysis, it appears that for the school district as a whole, average reading and math scores, as well as passing percentages, were not significantly impacted by removing the 9th grade scores from Thomas High School. At most, scores changed by .3%. 
 
-Screenshot 1
-Screenshot 2
+Initial Analysis with Thomas High School's 9th Grade Scores
+![School_District_with_THS](https://github.com/nikkiheaston/School_District_Analysis/blob/main/Resources/District_Summary_with_THS9th.PNG)
+
+
+Re-run Analysis with Thomas High School's Scores Replaced with NaNs
+![School_District_without_THS](https://github.com/nikkiheaston/School_District_Analysis/blob/main/Resources/District_Summary_without_THS9th.PNG)
 
 - Effects to school summary
-  - Re-running the analysis only impacted Thomas High School's metrics particularly to the passiing percentages (defined by receving 70% or higher), as shown in the DataFrames below. Prior to replacing the scores with NaNs Thomas High School had performed relatively well, with passing percentages at 93% for math and 97% for reading. Then, replacing the 9th grade scores with NaNs caused the percentages to drop significantly - to 67% and 70% respectively. Finally, re-running the data using only scores for 10th-12th graders brought the percentages back up - to 93% and 97% as before.
+  - Re-running the analysis only impacted Thomas High School's metrics particularly to the passing percentages (defined by receving 70% or higher), as shown in the DataFrames below. Prior to replacing the scores with NaNs Thomas High School had performed relatively well, with passing percentages at 93% for math and 97% for reading. Then, replacing the 9th grade scores with NaNs caused the percentages to drop significantly - to 67% and 70% respectively. Finally, re-running the data using only scores for 10th-12th graders brought the percentages back up - to 93% and 97% as before.
  
- Screenshot 3
- Screenshot 4
- Screenshot 5
+ Initial Analysis with Thomas High School's 9th Grade Scores
+ ![THS_with_9th_scores](https://github.com/nikkiheaston/School_District_Analysis/blob/main/Resources/Per_school_summary_THS_included.PNG)
+ 
+ Replacing Thomas High School's 9th Grade Scores with NaNs
+ ![THS_replace_NaNs](https://github.com/nikkiheaston/School_District_Analysis/blob/main/Resources/Per_school_summary_THS_excluded.PNG)
+ 
+ Re-Run Analysis Using Only Thomas High School's 10th to 12th Grade Scores
+ ![THS_10th_to_12th](https://github.com/nikkiheaston/School_District_Analysis/blob/main/Resources/Per_school_summary_final.png)
  
  - Thomas High School's performance compared to other schools 
-    - By replacing the 9th grade scores with NaNs, Thomas High School's overall passing percentage is second highest in the district, with overall passing percentage of 90.6%
-
-Screenshot 6
+    - By replacing the 9th grade scores with NaNs, Thomas High School's overall passing percentage kept the school in second place in the district, with overall passing percentage of 90.6%.
 
 - Effects to math and reading scores by grade
   - As expected, in comparing each school by grade, replacing Thomas High School's 9th grade scores did not affect any other school or grade's performance.
